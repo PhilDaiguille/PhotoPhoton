@@ -1,0 +1,69 @@
+/* RESET 2022 */
+html{
+	font-size:62.5%;
+	scroll-behavior:smooth;
+}
+body{
+	font-size:1.6rem;
+	margin:0;
+}
+section,figure,h1,h2,h3,h4,h5,h6,ol,p,ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+a{
+	color:#000;
+	text-decoration:none;
+}
+*{ 
+	box-sizing:border-box;
+}
+button{
+	padding:0;
+	border:0;
+	background-color:transparent;
+} 
+img{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+/*HEADER */
+header{
+	text-align: center;
+}
+
+/* MAIN */
+main{
+	max-width: 90rem;
+	margin: 2rem auto;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 1rem;
+}
+main section{
+	max-width: 50rem;
+	margin: 2rem auto;
+}
+main section h2{
+	text-align: center;
+}
+main section img{
+	border-radius: .5rem;
+}
+main section p{
+	text-align: center;
+}
+
+
+
+/* FOOTER */
+footer{
+	text-align: center;
+	padding: 2rem;
+}
+
+
+/* @Copyright - PhilDaiguille*/
