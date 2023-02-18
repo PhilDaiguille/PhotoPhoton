@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", async () => {
-	let projet = document.querySelector("main")
+	let projet = document.querySelector("main .row")
 	let data;
 	let url = 'https://github.com/PhilDaiguille/BDD_image/blob/master/'
 	async function getData() {
@@ -22,10 +22,9 @@ document.addEventListener("DOMContentLoaded", async () => {
 	for (let i = 0; i <= data.photo.length; i++) {
 		projet.innerHTML+=`
 			<section>
-			<h2>${data.photo[i].nom}</h2>
-			<img src="${url}${data.photo[i].img}?raw=true" alt="${data.photo[i].img}">
-			<p>${data.photo[i].date}</p>
-		</section>	
+				<h2>${data.photo[i].nom} • <span class="date"> ${data.photo[i].date} </span></h2>
+				<img src="${url}${data.photo[i].img}?raw=true" alt="${data.photo[i].img}">
+			</section>
 		`
 		console.log(data.photo[i].img)
 	}
