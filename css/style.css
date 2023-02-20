@@ -42,9 +42,11 @@ header{
 main{
 	display: block;
 	margin: 0 auto;
+	padding: 2rem;
 }
 main .row{
 	display: grid;
+	grid-gap: 1rem;
 	grid-template-columns: repeat(3, 1fr);
 	width: auto;
 }
@@ -62,14 +64,17 @@ main section h2{
 	padding: .5rem;
 }
 main section img{
-	margin: 1rem auto;
+	margin: 0rem auto;
+	min-width: 40rem;
+	max-height: 40rem;
+	object-fit: contain;
 	border-radius: .5rem;
 }
 main section h2 .date{
 	display: inline-block;
 	margin: 2rem auto;
 	border-radius: .5rem;
-	background-color: rgb(39, 31, 255);
+	background-color: rgb(255, 255, 255);
 	color: #000;
 	vertical-align: middle;
 	font-size: 2.5rem;
